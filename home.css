@@ -1,0 +1,33 @@
+html, body{
+    height:100%;
+    margin: 0;
+}
+
+.backdrop-head{
+    z-index: -1;
+    display: block;
+    position: static;
+    filter: contrast(75%);
+}
+
+.backdrop-subhead{
+    z-index: -1;
+    display: block;
+    position: relative;
+    filter: contrast(75%);
+}
+
+.backdrop-content{
+    z-index: -1;
+    display: block;
+    position: relative;
+    filter: contrast(75%);
+}
+
+.backdrop-content-upsidedown{
+    z-index: -1;
+    display: block;
+    position: relative;
+    transform: scaleY(-1);
+    filter: contrast(75%);
+}
