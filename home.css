@@ -1,8 +1,80 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+/* Font Definition */
+body{
+    font-family: 'Original Surfer', cursive;
+}
+
 html, body{
     height:100%;
     margin: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10%;
 }
 
+/*Desktop Styling*/
+
+/* Navigation */
+.navigation{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 100;
+}
+.navigation a.site-title{
+    float: left !important;
+    position: absolute !important;
+    font-size: larger;
+    margin-top: -0.5em;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    left: 1% !important;
+    text-shadow: -3px 2px 2px rgba(0, 0, 0, 0.61) !important;   
+    color: rgba(255,195,181,255) !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease-out;
+}
+
+.navigation a.site-title:hover{
+    color: black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background:rgba(215,147,255,255);
+    border-radius: 75%;
+    text-shadow: none;
+}
+
+.navigation a.menulink{
+    text-decoration: none;
+    float: right !important;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 140%;
+    font-weight: bolder;
+    color: rgba(215,147,255,255);
+    transition: all 0.3s ease-out;
+    text-shadow: -2px 2px 2px rgb(0, 0, 0);   
+}
+
+.navigation a.menulink:hover{
+    color: black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background:rgba(255,195,181,255);
+    border-radius: 50%;
+    text-shadow: none;
+}
+
+/* header */
+.pad-top{
+    padding-top: 3%;
+}
 .backdrop-head{
     z-index: -1;
     display: block;
@@ -30,4 +102,94 @@ html, body{
     position: relative;
     transform: scaleY(-1);
     filter: contrast(75%);
+    padding-bottom:5%;
+}
+
+.head-logo{
+    width: 40%;
+    height: auto;
+    z-index: 0;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+}
+
+.header-content{
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    z-index: 1;
+}
+
+.head-description{
+    z-index: 1;
+    padding-top: 8%;
+    color: rgba(215,147,255,255);
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+    text-shadow: -3px 2px 3px rgba(0, 0, 0, 0.61);    
+}
+
+/*About Us Styling*/
+.subhead{
+    position: relative;
+}
+
+.about-us{
+    width: 77%;
+    align-self: center;
+    z-index: 0;
+    position: absolute;
+    top: 3%;
+    left: 11.5%;
+}
+
+.abtus-title-div{
+    width: 43%;
+    float: left;
+    align-content: center;
+}
+
+.abtus-content-div{
+    width: 60%;
+    float: right;
+    align-content: center;
+    padding-top: 2%;
+
+}
+
+.abt-us-title{
+    position: absolute;
+    top: -10% !important;
+    left: 5%;
+}
+
+.about-us-decoration{
+    width: 35%;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+
+}
+
+/* General Style Classes for All Sections */
+.title{
+    font-weight: bold;
+    font-size: 400%;
+    text-shadow: -3px 2px 3px rgba(0, 0, 0, 0.61);   
+    color: rgba(215,147,255,255);
+    text-align: center;
+}
+
+.content{
+    font-size: 135%;
+}
+
+.tagline{
+    font-size: 140%;
+    font-weight: bold;
 }
