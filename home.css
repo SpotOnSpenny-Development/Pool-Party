@@ -10,7 +10,7 @@ html, body{
     height:100%;
     margin: 0;
     scroll-behavior: smooth;
-    scroll-padding-top: 10%;
+    scroll-padding-top: 12%;
 }
 
 /*Desktop Styling*/
@@ -176,10 +176,247 @@ html, body{
 
 }
 
+/* Socials Styling */
+.socials-title{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    margin-top: -1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socials-title-div{
+    align-items: center;
+}
+
+#socials{
+    position: relative;
+    width: 100%;
+}
+
+.socials-container{
+    width: 77%;
+    align-self: center;
+    left: 11.5%
+}
+
+.beachball {
+    height: auto;
+    width: 20%;
+    z-index: 1;
+}
+
+.social-logo{
+    height: auto;
+    width: 8%;
+    z-index: 2;
+}
+
+.twitter-logo{
+    position: absolute;
+    top: 27%;
+    left: 30%;
+    transform: rotate(-10deg);
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.twitter-ball{
+    position: absolute;
+    top: 13%;
+    left: 23%;
+}
+
+.discord-ball{
+    position: absolute;
+    top: 30%;
+    right: 23%;
+    transform: scaleX(-1);
+    z-index: 1;
+}
+
+.discord-logo{
+    position: absolute;
+    top: 44%;
+    right: 29%;
+    transform: rotate(8deg);
+}
+
+.goggles{
+    z-index: 0;
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    width: 25%;
+    height: auto;
+}
+
+.timmy{
+    z-index: 0;
+    position: absolute;
+    width: 25%;
+    height: auto;
+    right: 0%;
+    top: -5%;
+}
+
+.twitter-hover:hover > .twitter-logo{
+    animation: twitter-logo-bob 2s infinite linear;
+}
+
+.twitter-hover:hover > .twitter-ball{
+    animation: twitter-ball-bob 2s infinite linear;
+}
+
+@keyframes twitter-logo-bob{
+    0%{
+        position: absolute;
+        top: 27%;
+        left: 30%;
+        transform: rotate(-10deg);
+    }
+    25%{
+        position: absolute;
+        top: 28%;
+        left: 30%;
+        transform: rotate(-10deg);
+    }
+    50%{
+        position: absolute;
+        top: 27%;
+        left: 30%;
+        transform: rotate(-10deg);
+    }
+    75%{
+        position: absolute;
+        top: 26%;
+        left: 30%;
+        transform: rotate(-10deg);
+    }
+    100%{
+        position: absolute;
+        top: 27%;
+        left: 30%;
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes twitter-ball-bob{
+    0%{
+        position: absolute;
+        top: 13%;
+        left: 23%;
+    }
+    25%{
+        position: absolute;
+        top: 14%;
+        left: 23%;
+    }
+    50%{
+        position: absolute;
+        top: 13%;
+        left: 23%;
+    }
+    75%{
+        position: absolute;
+        top: 12%;
+        left: 23%;
+    }
+    100%{
+        position: absolute;
+        top: 13%;
+        left: 23%;
+    }
+}
+
+.discord-hover:hover > .discord-ball{
+    animation: discord-ball-bob 2s infinite linear;
+}
+
+.discord-hover:hover > .discord-logo{
+    animation: discord-logo-bob 2s infinite linear;
+}
+
+@keyframes discord-logo-bob{
+    0%{
+        position: absolute;
+        top: 44%;
+        right: 29%;
+        transform: rotate(8deg);
+    }
+    25%{
+        position: absolute;
+        top: 43%;
+        right: 29%;
+        transform: rotate(8deg);
+    }
+    50%{
+        position: absolute;
+        top: 44%;
+        right: 29%;
+        transform: rotate(8deg);
+    }
+    75%{
+        position: absolute;
+        top: 45%;
+        right: 29%;
+        transform: rotate(8deg);
+    }
+    100%{
+        position: absolute;
+        top: 44%;
+        right: 29%;
+        transform: rotate(8deg);
+    }
+}
+
+@keyframes discord-ball-bob{
+    0%{
+        position: absolute;
+        top: 30%;
+        right: 23%;
+        transform: scaleX(-1);
+        z-index: 1;
+    }
+    25%{
+        position: absolute;
+        top: 29%;
+        right: 23%;
+        transform: scaleX(-1);
+        z-index: 1;
+    }
+    50%{
+        position: absolute;
+        top: 30%;
+        right: 23%;
+        transform: scaleX(-1);
+        z-index: 1;
+    }
+    75%{
+        position: absolute;
+        top: 31%;
+        right: 23%;
+        transform: scaleX(-1);
+        z-index: 1;
+    }
+    100%{
+        position: absolute;
+        top: 30%;
+        right: 23%;
+        transform: scaleX(-1);
+        z-index: 1;
+    }
+}
+
 /* General Style Classes for All Sections */
 .title{
     font-weight: bold;
-    font-size: 400%;
+    font-size: 350%;
     text-shadow: -3px 2px 3px rgba(0, 0, 0, 0.61);   
     color: rgba(215,147,255,255);
     text-align: center;
